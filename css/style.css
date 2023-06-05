@@ -1,0 +1,727 @@
+
+/*Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+/*Para quitarle el margen al documento*/
+* , body {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+/*------------------BARRA DE NAVEGACION------------------*/
+
+
+
+/*Todos los a que está adentro de los li que están adentro de los nav */
+.nav {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    text-decoration: none;
+    justify-content: flex-end;
+    align-items: center;
+    box-shadow: 0 0 29px 0 rgba(56, 54, 56, 0.253);
+    height: 4.5rem;   
+    position: fixed;
+    width:100%;
+    z-index: 1000;
+    background-color: whitesmoke;
+   
+}
+
+.nav :hover{
+    color: #31279d; 
+}
+
+
+/*Todos los a que está adentro de los li que están adentro de los nav */
+.nav li a {
+    margin: 30px;
+    font-size: 1rem;
+    text-decoration: none;
+    font-family: verdana;
+    color: black;
+}
+
+/*Todos los <ul> que estan adentro de los li que están adentro de la .barra-nav */
+.barra-nav ul {
+    padding-right: 100px;
+}
+ 
+/*Menu hamburguesa*/
+.burger{
+    display: none;
+}
+
+/*------------------CONTAINER - MAIN------------------*/
+
+
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5%;
+}
+
+.hello{
+    color:black;
+    font-size: 2.5rem;
+    font-family: Verdana, Geneva, Tahoma, verdana;
+}
+
+.Lidia-Bejarano{
+    font-family: "Dancing Script", cursive;
+    font-size: 4rem;
+    color:#ea80fc;
+    font-weight: 700;
+}
+
+.mi-description{
+    color:black;
+    font-size: 1rem;
+    margin-top: 20px;
+    font-family: Verdana, Geneva, Tahoma, verdana;
+    padding-top:2%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container-skills > p{
+    color: grey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 40%;
+}
+
+.imagen{
+    max-width: 500px;
+    padding: 5%;
+}
+
+
+
+/*------------------CONTAINER - SKILLS------------------*/
+
+
+
+
+/*2do Contenedor general que mide el 100% del ancho del viewport (pantalla) y el ancho se ajusta al contenido - color gris*/
+.container-skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:rgb(246,247,251);
+    text-align: center;
+}
+
+
+/*Contenedor que contiene 1. La caja del texto + 2. La grilla*/
+.skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 55px 0px 20px 0px;
+}
+
+/*Contenedor para la grilla*/
+.container-box{
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    width:60%;
+    padding-bottom: 5%;
+}
+
+/*Los bloques de la grilla*/
+.box-skills{
+    width: 160px;
+    margin: 10px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #dddfe5;
+    
+}
+
+.container-box :hover{
+    border-color: #31279d;
+    cursor: pointer;
+    transition: 0.3s;
+    
+}
+
+/*Los <p> que estan dentro de los bloques */
+.box-skills p {
+    font-size: 1rem;
+    font-family: verdana;
+    font-weight: 700;
+    margin: 10px;
+    padding:30px;
+}
+
+.skills p{
+    width: auto;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.skills-text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+/*Iconos de tecnologias*/
+i {
+    font-size: 4rem;
+}
+
+h3 {
+    font-family: verdana;
+    font-size: 2.5rem;
+    padding: 20px;
+}
+
+
+
+/*------------------CONTAINER PHRASE------------------*/
+
+
+
+.container-phrase{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:#f50057;
+    height: 70vh;
+    color: white;
+}
+.container-phrase i{
+    font-size: 4rem;
+    padding-bottom:5%;
+}
+.container-phrase{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.phrase{
+    text-align: center;
+    vertical-align: center;
+    font-size: 2rem;
+    font-family: verdana;
+    width: 80%;   
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+button, .button {
+    background:#ea80fc;
+    padding: 15px 20px;
+    margin-top: 35px;
+    border-radius: 40px;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+    font-family: verdana;
+    color: white !important;
+    transition: .5s;
+    
+}
+
+.button:hover{
+background: #31279d;
+}
+
+
+/*El selector a:link y a:visited hace referencia al detalle de los links y de los links visitados*/
+
+a:link{
+    color: black;
+}
+a:visited{
+    color: black;
+}
+
+
+/*------------------CONTAINER PROYECTOS------------------*/
+
+
+
+.container-projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+.projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+    text-align: center;
+}
+
+.container-projects :hover{
+    border-color: #31279d;
+    cursor: pointer;
+    transition: 0.3s;
+    
+}
+.phrase-text{
+    font-size: 1.2rem;
+    font-family: verdana;
+    padding: 2%;
+}
+
+/*------------------CONTAINER PROYECTOS------------------*/
+
+.projects-text {
+    color: grey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 40%;
+    margin: 30px;
+}
+
+.projects-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+}
+.box-proyectos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.box-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #e0e0e0;
+    margin: 1%;
+    padding:2%;
+    border-radius: 8px;
+    width: 240px;
+    height: 219px;
+}
+
+.projects-items img{
+    width:190px;
+    height: 140px;
+}
+
+a p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700px;
+    color: grey;
+    font-size: 1rem;
+}
+
+.container-skills p{
+    padding: 2%;
+}
+.container-skills{
+    padding-top: 5%;
+}
+
+/*------------------ FORMULARIO ------------------*/
+
+
+*{
+    box-sizing: border-box;
+}
+#section-contact{
+    width: 100%;
+    padding: 10%;
+}
+.box-contact{
+    position: relative;
+    display: table;
+    width:1100px;
+    margin:auto;
+    margin-top:3%;
+    border-radius: 30px;
+    margin-bottom: 3%;
+}
+.info-contact{
+    width:35%;
+    height: 543px;
+    padding:40px 25px 35px 25px;
+    float: left;
+    display: block;
+    border-radius: 30px 0px 0px 30px;
+    background-color: #f6f7fb;
+}
+.info-title{
+    text-align: left;
+    font-size: 28px;
+}
+.info-sub-title{
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 17px;
+    line-height: 26px;
+}
+.info-details {
+    list-style: none;
+    margin: 10px;
+    
+}
+.info-details li {
+    margin-top: 10px;
+    font-size: 18px;
+    
+    
+}
+.info-details li i {
+    padding: 12px;
+    border-radius: 50%;
+    margin-right: 5px;
+    
+}
+.info-details li a {
+    text-decoration: none;
+}
+
+.info-details li:hover {
+    color: #31279d;
+    cursor: pointer;   
+}
+
+.form-contact{
+    width:65%;
+    float: right;
+    padding:40px 25px 35px 25px;
+    border-radius: 0px 30px 30px 0px;
+    background: #ecf0f3;
+}
+.form-title{
+    text-align: left;
+    margin-left: 23px;
+    font-size: 28px;
+}
+.form-fields{
+    display: table;
+    width: 100%;
+    padding: 15px 5px 5px 5px;
+}
+.form-fields input,
+.form-fields textarea{
+    border: none;
+    outline:none;
+    background: none;
+    font-size: 18px;
+    color:rgb(204, 204, 204);
+    padding: 20px 10px 20px 5px;
+    width:100%
+}
+.form-fields textarea{
+    height: 150px;
+    resize: none;
+}
+.form-group{
+    display: flex;
+    width: 46%;
+    float: left;
+    padding: 0px 30px;
+    margin: 14px 12px;
+    border-radius: 25px;
+    background-color: rgb(228, 228, 228);
+    
+}
+
+.form-group-email {
+    width: 96%;
+    display: flex;
+    float: left;
+    padding: 0px 30px;
+    margin: 14px 12px;
+    border-radius: 25px;
+    background-color: rgb(228, 228, 228);
+}
+
+.form-fields .form-group:last-child {
+    width: 96%;
+}
+.submit-button{
+    width: 96%;
+    height: 60px;
+    margin: 0px 12px;
+    border-radius: 30px;
+    font-size: 20px;;
+    font-weight: 700;
+    border:none;
+    cursor: pointer;
+    color:#fff;
+    text-align: center;
+    background: #ea80fc;
+    transition: .5s;
+}
+.submit-button:hover{
+    background: #31279d;
+}
+
+
+
+/*------------------FOOTER------------------*/
+.nav-footer{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    text-decoration: none;
+    justify-content: flex-end;
+    align-items: center;
+}
+.nav-footer li a {
+    margin: 15px;
+    font-size: 0.8rem;
+    text-decoration: none;
+    font-family: verdana;
+    color: white;
+   
+
+}
+
+.nav-footer :hover  {
+    color: #31279d;
+    cursor: pointer;
+    transition: 0.3s;
+    
+    
+}
+.container-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ea80fc;
+    height: 40vh;
+    color: white;
+}
+.nav-footer i{
+    font-size: 2.5rem;
+    padding: 10px;
+    padding-top: 40px;
+}
+.container-footer p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.9rem;
+    padding-top: 15px;
+}
+
+/*------------------MEDIA QUERIES------------------*/
+
+
+
+@media (max-width: 900px) {
+        .container-principal {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+        }
+        .principal{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .hola {
+            color: black;
+            font-size: 2rem;
+            font-family: verdana;
+        }
+        .Lidia-Bejarano {
+            font-family: "Dancing Script", cursive;
+            font-size: 3.2rem;
+            color: fuchsia;
+        }
+        .mi-descripcion {
+            color: deepskyblue;
+            font-size: 1rem;
+
+            font-family: verdana;
+            padding-bottom: 5%;
+        }
+        .imagen {
+            width: 60%;
+            padding: 0px;
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            height: 4rem;   
+        }
+        .nav li a {
+            margin: 10px;
+            font-size: 0.8rem;
+            text-decoration: none;
+            font-family: verdana;
+            color: black;
+        }
+
+        .barra-nav ul {
+            padding-right: 0px;
+}
+        .fas{
+            display: none;
+        }
+        .contenedor-box{
+            width: 80%;
+        }
+
+  } 
+
+  @media (max-width: 600px) {
+    h3{
+        font-size: 1.5rem;
+    }
+
+      .nav li a {
+          display: none;
+      }
+      nav .burger {
+          display: block;
+          flex-direction: column;
+          align-items: flex-end;
+          font-size: 0.1rem;
+      }
+
+      nav .burger i{
+          font-size: 2rem;
+          padding-right: 25px;
+      } 
+      .nav{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        
+      }
+      .box-skills{
+          width: 110px;
+          margin: 10px;
+          padding:30px;
+      }
+
+      .imagen{
+          width: 80%;
+          padding-top:25px;
+      }
+    
+      .projects-nav a{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding:0px 10px;
+        margin: 5px;
+        font-size: 0.8rem;
+    
+    }
+    .phrase-text{
+        font-size: 0.8rem;
+    }
+    .contenedor-box{
+        width: 100%;
+    }
+    .container-skills p{
+        width: 80%;
+        padding-bottom:20px ;
+    }
+    .box-skills{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:90px;
+        padding: 20px;
+
+        margin: 5px;
+    }
+    .box-skills p{
+        font-size: 0.7rem;
+        padding: 0px;
+        font-weight: 400px;
+        color: rgb(66, 64, 64);
+
+    }
+    .box-skills i{
+        font-size: 3rem;
+    }
+
+    .container-form {
+        display: flex;
+        background-color: aqua;
+        width: 50px;
+        height: 50px;
+   }
+   
+
+   .container-contact {
+    display: flex;
+    background-color: #ea80fc;
+}
+
+    .nav-footer li a{
+        font-size: 0.6rem;
+        padding:0px;
+        margin: 10px;
+    }
+    .nav-footer i{
+        font-size: 2rem;
+        padding: 10px;
+        padding-top: 40px;
+    }
+
+   }
+
+   /* Responsive - form */
+@media (max-width: 900px) {
+    .box-contact{
+        width: 100%;
+    }
+    .info-contact,
+    .form-contact{
+        width: 100%;
+        height: inherit;
+        float: none;  
+    }
+    .info-wrap{
+        border-radius: 30px 30px 0px 0px;
+    }
+    .form-contact{
+        border-radius: 0px 0px 30px 30px;
+    }
+    .form-group{
+        width: 100%;
+        float: none;
+        margin: 25px 0px;
+    }
+    .form-fields .form-group:last-child, 
+    .submit-button{
+        width: 100%;
+    }
+    .submit-button{
+        margin: 10px 0px;
+    }
+   
+}
