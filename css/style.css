@@ -135,13 +135,13 @@ a {
 
 /*Contenedor para la grilla*/
 .container-box{
-
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
-    width:60%;
+    width:50%;
     padding-bottom: 5%;
+    
 }
 
 /*Los bloques de la grilla*/
@@ -252,16 +252,6 @@ background: #31279d;
 }
 
 
-/*El selector a:link y a:visited hace referencia al detalle de los links y de los links visitados*/
-
-a:link{
-    color: black;
-}
-a:visited{
-    color: black;
-}
-
-
 /*------------------CONTAINER PROYECTOS------------------*/
 
 
@@ -270,8 +260,9 @@ a:visited{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
+    width: 95%;
     height: auto;
+    
 }
 .projects{
     display: flex;
@@ -293,8 +284,6 @@ a:visited{
     padding: 2%;
 }
 
-/*------------------CONTAINER PROYECTOS------------------*/
-
 .projects-text {
     color: grey;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -305,10 +294,10 @@ a:visited{
 .projects-items{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
-    width: 90%;
+    width: 70%;
 }
 .box-proyectos{
     display: flex;
@@ -367,6 +356,7 @@ a p{
     margin-bottom: 3%;
 }
 .info-contact{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     width:35%;
     height: 543px;
     padding:40px 25px 35px 25px;
@@ -393,30 +383,38 @@ a p{
 .info-details li {
     margin-top: 10px;
     font-size: 18px;
-    
-    
+ 
 }
 .info-details li i {
     padding: 12px;
     border-radius: 50%;
     margin-right: 5px;
+    font-size: 25px;
     
 }
 .info-details li a {
     text-decoration: none;
 }
 
-.info-details li:hover {
-    color: #31279d;
-    cursor: pointer;   
+.info-details i:hover  {
+    color: #ea80fc;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+.info-details a:hover  {
+    color: #ea80fc;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 .form-contact{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     width:65%;
     float: right;
     padding:40px 25px 35px 25px;
     border-radius: 0px 30px 30px 0px;
-    background: #ecf0f3;
+    background: #f6f7fb;
 }
 .form-title{
     text-align: left;
@@ -424,6 +422,7 @@ a p{
     font-size: 28px;
 }
 .form-fields{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: table;
     width: 100%;
     padding: 15px 5px 5px 5px;
@@ -441,6 +440,7 @@ a p{
 .form-fields textarea{
     height: 150px;
     resize: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .form-group{
     display: flex;
@@ -450,7 +450,7 @@ a p{
     margin: 14px 12px;
     border-radius: 25px;
     background-color: rgb(228, 228, 228);
-    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .form-group-email {
@@ -466,6 +466,14 @@ a p{
 .form-fields .form-group:last-child {
     width: 96%;
 }
+
+.form-fields input:focus{
+    outline: 3px solid red; 
+    
+    
+
+}
+
 .submit-button{
     width: 96%;
     height: 60px;
@@ -479,12 +487,11 @@ a p{
     text-align: center;
     background: #ea80fc;
     transition: .5s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .submit-button:hover{
     background: #31279d;
 }
-
-
 
 /*------------------FOOTER------------------*/
 .nav-footer{
@@ -505,13 +512,6 @@ a p{
 
 }
 
-.nav-footer :hover  {
-    color: #31279d;
-    cursor: pointer;
-    transition: 0.3s;
-    
-    
-}
 .container-footer{
     display: flex;
     justify-content: center;
@@ -522,7 +522,7 @@ a p{
     color: white;
 }
 .nav-footer i{
-    font-size: 2.5rem;
+    font-size: 30px;
     padding: 10px;
     padding-top: 40px;
 }
@@ -532,11 +532,18 @@ a p{
     padding-top: 15px;
 }
 
+.nav-footer :hover  {
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    
+    
+}
 /*------------------MEDIA QUERIES------------------*/
 
 
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
         .container-principal {
             display: flex;
             flex-direction: column;
@@ -695,7 +702,7 @@ a p{
    }
 
    /* Responsive - form */
-@media (max-width: 900px) {
+@media (max-width: 600px) {
     .box-contact{
         width: 100%;
     }

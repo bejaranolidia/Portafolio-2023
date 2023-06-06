@@ -1,7 +1,12 @@
 # Proyecto Portfolio
 ## Extracto
-Primer proyecto realizado en el curso de Desarrollo Frontend en ADA ITW. Trabajamos con CSS y HTML5.
+👨‍💻 First project I do in the Frontend Development course at ADA ITW. 
+
+We work with.
+✅CSS
+✅HTML5
+
 ## Proyecto
-[Clic aquí para visitar mi página]()
+[Clic aquí para visitar mi página](https://bejaranolidia.github.io/Portafolio-2023/)
 ## ADA ITW
 [Clic aquí para conocer más acerca de ADA ITW](https://adaitw.org/)
